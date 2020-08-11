@@ -3,6 +3,7 @@ import styled from "styled-components";
 import logoWhiteImage from "../images/logo_color_white_horizontal.png";
 import logoBlackImage from "../images/logo_color_black_horizontal.png";
 import Navigation from "../components/Navigation";
+import { device } from "../device";
 
 const HeaderContainer = styled.div`
   position: fixed;
@@ -13,6 +14,11 @@ const HeaderContainer = styled.div`
   justify-content: space-around;
   align-items: center;
   padding: 0 20px;
+
+  @media ${device.tablet} {
+    justify-content: space-between;
+    padding: 0 120px;
+  }
 `;
 
 const Logo = styled.img`

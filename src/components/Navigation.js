@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import { device } from "../device";
 
 const NavList = styled.ul`
   display: flex;
   color: white;
   z-index: 10;
 
-  @media (max-width: 991px) {
+  @media ${device.tablet} {
     display: none;
   }
 `;
@@ -25,9 +26,37 @@ const NavItem = styled.li`
   }
 `;
 
+const NavToggleIcon = styled.div`
+  @media ${device.tablet} {
+    display: block;
+    margin-right: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 0.1px solid rgb(238 234 234 / 0.13);
+}
+  }
+`;
+
+// TODO: 이름 변경하기
+const NavButtonInner = styled.div`
+  @media ${device.tablet} {
+    margin: 3px 4px;
+    background: rgb(251 247 247 / 60%);
+    width: 22px;
+    height: 2px;
+  }
+`;
+
 const Navigation = () => {
   return (
     <div>
+      <NavToggleIcon>
+        <NavButtonInner />
+        <NavButtonInner />
+        <NavButtonInner />
+      </NavToggleIcon>
       <NavList>
         {/* TODO:루트 이동하기 */}
         <NavItem>홈</NavItem>
