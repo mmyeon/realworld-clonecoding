@@ -13,18 +13,20 @@ const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0 20px;
-
-  @media ${device.tablet} {
-    justify-content: space-between;
-    padding: 0 120px;
-  }
 `;
 
 const Logo = styled.img`
   width: 170px;
   padding-left: 10px;
   cursor: pointer;
+  margin-right: 260px;
+
+  @media ${device.tablet} {
+    margin-right: 450px;
+  }
+  @media ${device.mobileL} {
+    margin-right: 260px;
+  }
 `;
 
 const Header = () => {
