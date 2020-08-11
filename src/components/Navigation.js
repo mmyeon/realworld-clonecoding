@@ -8,7 +8,16 @@ const NavList = styled.ul`
   z-index: 10;
 
   @media ${device.tablet} {
+    /* TODO: 나중에 보이도록 수정 */
     display: none;
+    left: 0;
+    top: 57px;
+    flex-direction: column;
+    padding: 0 80px;
+    padding-bottom: 8px;
+    position: absolute;
+    width: 100%;
+    background: rgba(100, 100, 100, 0.6);
   }
 `;
 
@@ -21,8 +30,6 @@ const NavItem = styled.li`
 
   &:hover {
     background: black;
-    z-index: 100;
-    opacity: 100;
   }
 `;
 
@@ -35,7 +42,6 @@ const NavToggleIcon = styled.div`
     padding: 6px 10px;
     border-radius: 6px;
     border: 0.1px solid rgb(238 234 234 / 0.13);
-}
   }
 `;
 
