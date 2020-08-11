@@ -5,3 +5,8 @@
   list-style: none;
   text-decoration: none;
 }
+
+body {
+  /* TODO: 스크롤 임의 설정 */
+  height: 2000px;
+}
