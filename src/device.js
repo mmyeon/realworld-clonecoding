@@ -8,4 +8,5 @@ export const device = {
   mobileM: `(max-width:${size.mobileM})`,
   mobileL: `(max-width:${size.mobileL})`,
   tablet: `(max-width:${size.tablet})`,
+  tabletSize: "768px",
 };

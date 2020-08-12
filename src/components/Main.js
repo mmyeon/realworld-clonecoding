@@ -1,8 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import backgroundImage from "../images/main-image.jpg";
-import appStore from "../images/appstore-black.png";
-import googlePlay from "../images/googleplay-black.png";
+import BlackappStore from "../images/appstore-black.png";
+import BlackgooglePlay from "../images/googleplay-black.png";
+import WhiteappStore from "../images/appstore-white.png";
+import WhitegooglePlay from "../images/googleplay-white.png";
+
+import { device } from "../device";
 
 const MainContainer = styled.div`
   width: 100%;
@@ -12,12 +16,18 @@ const MainContainer = styled.div`
   display:flex;
   flex-direction:column;
   justify-content: center;
-  /* text-align:center; */
+
 `;
 
 const MainContent = styled.div`
   width: 80%;
   margin: 0 auto;
+
+  @media ${device.mobileL} {
+    width: 40%;
+    color: white;
+    font-weight: 800;
+  }
 `;
 
 const MainTitle = styled.div`
@@ -25,10 +35,24 @@ const MainTitle = styled.div`
   font-weight: 500;
   letter-spacing: 1px;
   line-height: 61px;
+
+  @media ${device.mobileL} {
+    color: white;
+    font-weight: 800;
+  }
 `;
 
 const DownloadButtons = styled.div`
   margin-top: 40px;
+
+  > .button {
+    background-image: url(${WhitegooglePlay});
+    /* background-image: url("../images/appstore-white.png"); */
+    width: 100px;
+    height: 50px;
+    background-position: center;
+    background-size: contain;
+  }
 `;
 
 const Button = styled.img`
@@ -53,8 +77,13 @@ const Main = () => {
           </p>
         </MainTitle>
         <DownloadButtons>
-          <Button src={appStore} />
-          <Button src={googlePlay} />
+          {/* {`${device.tabletSize}` ? (
+            <Button src={WhiteappStore} />
+          ) : (
+            <Button src={BlackappStore} />
+          )} */}
+
+          <div className="button"></div>
         </DownloadButtons>
       </MainContent>
     </MainContainer>
