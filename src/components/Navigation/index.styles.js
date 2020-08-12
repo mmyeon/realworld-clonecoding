@@ -1,6 +1,5 @@
-import React from "react";
 import styled from "styled-components";
-import { device } from "../device";
+import { device } from "../../device";
 
 const NavList = styled.ul`
   display: flex;
@@ -55,25 +54,4 @@ const NavButtonInner = styled.div`
   }
 `;
 
-const Navigation = () => {
-  return (
-    <div>
-      <NavToggleIcon>
-        <NavButtonInner />
-        <NavButtonInner />
-        <NavButtonInner />
-      </NavToggleIcon>
-      <NavList>
-        {/* TODO:루트 이동하기 */}
-        <NavItem>홈</NavItem>
-        <NavItem>소개</NavItem>
-        <NavItem>게임 목록</NavItem>
-        <NavItem>뉴스</NavItem>
-        <NavItem>SHOP</NavItem>
-        <NavItem>유니크굿컴퍼니</NavItem>
-      </NavList>
-    </div>
-  );
-};
-
-export default Navigation;
+export { NavList, NavItem, NavToggleIcon, NavButtonInner };
