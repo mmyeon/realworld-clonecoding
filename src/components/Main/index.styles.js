@@ -42,14 +42,28 @@ const MainTitle = styled.div`
 
 const DownloadButtons = styled.div`
   margin-top: 40px;
+  display: flex;
 
   > .button {
-    background-image: url(${whiteGooglePlay});
-    /* background-image: url("../images/appstore-white.png"); */
-    width: 100px;
-    height: 50px;
-    background-position: center;
-    background-size: contain;
+    width: 216px;
+    height: 70px;
+  }
+
+  > .appStore {
+    background-image: url(${blackAppStore});
+    margin-right: 18px;
+
+    @media ${device.mobileL} {
+      background-image: url(${whiteAppStore});
+    }
+  }
+
+  > .googlePlay {
+    background-image: url(${blackGooglePlay});
+
+    @media ${device.mobileL} {
+      background-image: url(${whiteGooglePlay});
+    }
   }
 `;
 

@@ -15,13 +15,8 @@ const Main = () => {
           </p>
         </Styled.MainTitle>
         <Styled.DownloadButtons>
-          {/* {`${device.tabletSize}` ? (
-            <Button src={WhiteappStore} />
-          ) : (
-            <Button src={BlackappStore} />
-          )} */}
-
-          <div className="button"></div>
+          <div className="appStore button"></div>
+          <div className="googlePlay button"></div>
         </Styled.DownloadButtons>
       </Styled.MainContent>
     </Styled.MainContainer>
