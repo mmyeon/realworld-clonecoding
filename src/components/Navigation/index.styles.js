@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import { device } from "../../device";
 
+// const Container = styled.section`
+//   > nav {
+//   }
+// `;
+
 const NavList = styled.ul`
   display: flex;
   color: white;
@@ -54,4 +59,4 @@ const NavButtonInner = styled.div`
   }
 `;
 
-export { NavList, NavItem, NavToggleIcon, NavButtonInner };
+export default { NavList, NavItem, NavToggleIcon, NavButtonInner, Container };
