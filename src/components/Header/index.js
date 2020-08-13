@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import logoWhiteImage from "../images/logo_color_white_horizontal.png";
-// import logoBlackImage from "../images/logo_color_black_horizontal.png";
-import Navigation from "./Navigation";
-import { device } from "../device";
+import logoWhiteImage from "../../images/logo_color_white_horizontal.png";
+import Navigation from "../Navigation";
+import { device } from "../../device";
 
-const HeaderContainer = styled.div`
+const HeaderContainer = styled.header`
   position: fixed;
   width: 100%;
   height: 57px;
