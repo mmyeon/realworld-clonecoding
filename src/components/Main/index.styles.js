@@ -11,6 +11,7 @@ const MainContainer = styled.div`
   height: 100vh;
   background-image:url("${backgroundImage}");
   background-size:cover;
+  background-position: center right;
   display:flex;
   flex-direction:column;
   justify-content: center;
@@ -22,7 +23,7 @@ const MainContent = styled.div`
   margin: 0 auto;
 
   @media ${device.mobileL} {
-    width: 40%;
+    /* width: 40%; */
     color: white;
     font-weight: 800;
   }
@@ -47,6 +48,7 @@ const DownloadButtons = styled.div`
   > .button {
     width: 216px;
     height: 70px;
+    cursor: pointer;
   }
 
   > .appStore {
