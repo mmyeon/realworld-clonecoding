@@ -36,37 +36,6 @@ const Container = styled.section`
   }
 `;
 
-// const NavList = styled.ul`
-//   display: flex;
-//   color: white;
-//   z-index: 10;
-
-//   @media ${device.tablet} {
-//     /* TODO: 나중에 보이도록 수정 */
-//     display: none;
-//     left: 0;
-//     top: 57px;
-//     flex-direction: column;
-//     padding: 0 80px;
-//     padding-bottom: 8px;
-//     position: absolute;
-//     width: 100%;
-//     background: rgba(100, 100, 100, 0.6);
-//   }
-// `;
-
-// const NavItem = styled.li`
-//   color: white;
-//   padding: 10px 12px;
-//   cursor: pointer;
-//   font-weight: 600;
-//   font-size: 14px;
-
-//   &:hover {
-//     background: black;
-//   }
-// `;
-
 const NavToggleIcon = styled.div`
   @media ${device.tablet} {
     display: block;
@@ -89,5 +58,4 @@ const NavButtonInner = styled.div`
   }
 `;
 
-// export default { NavList, NavItem, NavToggleIcon, NavButtonInner, Container };
 export default { NavToggleIcon, NavButtonInner, Container };

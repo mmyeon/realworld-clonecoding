@@ -20,21 +20,6 @@ const Navigation = () => {
         </div>
       </nav>
       {/* TODO:루트 이동하기 */}
-      {/* <Styled.NavItem>홈</Styled.NavItem>
-        <Styled.NavItem>소개</Styled.NavItem>
-        <Styled.NavItem>게임 목록</Styled.NavItem>
-        <Styled.NavItem>뉴스</Styled.NavItem>
-        <Styled.NavItem>SHOP</Styled.NavItem>
-        <Styled.NavItem>유니크굿컴퍼니</Styled.NavItem>
-      </nav> */}
-      {/* <Styled.NavList>
-        <Styled.NavItem>홈</Styled.NavItem>
-        <Styled.NavItem>소개</Styled.NavItem>
-        <Styled.NavItem>게임 목록</Styled.NavItem>
-        <Styled.NavItem>뉴스</Styled.NavItem>
-        <Styled.NavItem>SHOP</Styled.NavItem>
-        <Styled.NavItem>유니크굿컴퍼니</Styled.NavItem>
-      </Styled.NavList> */}
     </Styled.Container>
   );
 };
