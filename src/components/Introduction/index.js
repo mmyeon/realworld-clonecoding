@@ -1,8 +1,8 @@
 import React from "react";
-import Styled from "../Introduce/index.styles";
+import Styled from "./index.styles";
 import backgroundImage from "../../images/background-graphic.svg";
 
-const Introduce = () => {
+const Introduction = () => {
   return (
     <Styled.Container>
       <img
@@ -14,4 +14,4 @@ const Introduce = () => {
   );
 };
 
-export default Introduce;
+export default Introduction;
