@@ -17,7 +17,8 @@ const Container = styled.section`
   }
 
   > .mockup-image {
-    width: 27.2%;
+    max-width: 415px;
+    width: 90%;
     position: relative;
     top: 172px;
     margin-right: 50px;
