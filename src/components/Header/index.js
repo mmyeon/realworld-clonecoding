@@ -12,6 +12,7 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  z-index: 10;
 `;
 
 const Logo = styled.img`
