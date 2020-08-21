@@ -18,6 +18,7 @@ const Games = styled.section`
     font-size: 2.1rem;
     margin-left: 90px;
     font-weight: 400;
+    margin-bottom: 20px;
   }
 `;
 
