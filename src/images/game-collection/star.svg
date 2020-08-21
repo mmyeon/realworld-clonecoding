@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g id="prefix__star" transform="translate(-.01 .347)">
+        <path id="prefix__사각형_1047" fill="none" d="M0 0H24V24H0z" data-name="사각형 1047" transform="translate(.01 -.347)"/>
+        <path id="prefix__star-2" fill="#ffd814" d="M9.48 2.35L7.348 6.674l-4.77.695A1.044 1.044 0 0 0 2 9.151l3.451 3.364-.816 4.752a1.043 1.043 0 0 0 1.514 1.1l4.267-2.244 4.267 2.244a1.044 1.044 0 0 0 1.514-1.1l-.816-4.752 3.451-3.364a1.045 1.045 0 0 0-.578-1.782l-4.77-.695-2.131-4.324a1.044 1.044 0 0 0-1.4-.471 1.024 1.024 0 0 0-.473.471z" data-name="star" transform="translate(1.082 1.137)"/>
+    </g>
+</svg>
