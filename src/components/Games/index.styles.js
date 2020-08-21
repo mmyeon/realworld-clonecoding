@@ -10,13 +10,13 @@ const Games = styled.section`
     position: absolute;
     width: 180px;
     top: 74px;
-    left: 23px;
+    left: 7%;
   }
 
   > h2 {
     padding-top: 111px;
     font-size: 2.1rem;
-    margin-left: 90px;
+    margin-left: 13%;
     font-weight: 400;
     margin-bottom: 20px;
   }
