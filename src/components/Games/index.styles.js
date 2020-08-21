@@ -12,6 +12,13 @@ const Games = styled.section`
     top: 74px;
     left: 23px;
   }
+
+  > h2 {
+    padding-top: 111px;
+    font-size: 2.1rem;
+    margin-left: 90px;
+    font-weight: 400;
+  }
 `;
 
 export default { Games };
