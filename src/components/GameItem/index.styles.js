@@ -3,7 +3,8 @@ import styled from "styled-components";
 const Container = styled.section`
   display: flex;
   position: absolute;
-  left: 13%;
+  /* left: 13%; */
+  transition: 0.5s;
 
   > .item {
     width: 420px;
@@ -12,6 +13,7 @@ const Container = styled.section`
 
     > .game-image {
       width: 100%;
+      height: 280px;
       border-radius: 10px;
       top: 0;
       left: 0;
