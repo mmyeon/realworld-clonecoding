@@ -1,4 +1,3 @@
-import React from "react";
 import agentX from "../src/images/game-collection/agent-x.png";
 import lastCollection from "../src/images/game-collection/last-collection.png";
 import jungdong from "../src/images/game-collection/jungdong.png";
