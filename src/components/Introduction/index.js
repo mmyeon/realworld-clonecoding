@@ -2,6 +2,7 @@ import React from "react";
 import Styled from "./index.styles";
 import backgroundImage from "../../images/background-graphic.svg";
 import mockupImage from "../../images/mockup-mainpage.png";
+import Button from "../Button";
 
 const Introduction = () => {
   return (
@@ -20,7 +21,7 @@ const Introduction = () => {
           리얼월드는 경험형 놀이콘텐츠를 통해 <br></br> 놀이-여가문화의 새로운
           방식을 만들어나갑니다.
         </p>
-        <div className="button">리얼월드 소개 보기</div>
+        <Button content="리얼월드 소개 보기" />
       </div>
     </Styled.Container>
   );
