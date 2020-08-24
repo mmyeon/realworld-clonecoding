@@ -24,7 +24,7 @@ const GameItem = () => {
   return (
     <Styled.Container ref={sectionEl} style={{ left: `${start}` + "%" }}>
       {gamelist.map((item) => (
-        <div className="item">
+        <div className="item" key={item.id}>
           <img src={item.image} className="game-image" alt="gameImage" />
           <div className="detail-content">
             <span className="location">{item.location}</span>
