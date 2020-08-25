@@ -28,7 +28,14 @@ const Container = styled.section`
       > .location {
         color: #626262;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 17px;
+        text-overflow: clip;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      .star-rating > img {
+        margin-left: 1px;
       }
     }
 
@@ -41,7 +48,10 @@ const Container = styled.section`
     > p {
       color: #626262;
       font-weight: 500;
-      font-size: 16px;
+      font-size: 17px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
     }
   }
 `;

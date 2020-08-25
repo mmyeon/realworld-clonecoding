@@ -1,4 +1,5 @@
-import React, { useRef, useEffect } from "react";
+// import React, { useRef, useEffect } from "react";
+import React from "react";
 import Styled from "./index.styles.js";
 // import gameImage from "../../images/game-collection/agent-x.png";
 import star from "../../images/game-collection/star.svg";
@@ -6,8 +7,8 @@ import gamelist from "../../gamelist.js";
 
 // TODO:useEffect
 const GameItem = () => {
-  const sectionEl = useRef(null);
-  const start = 13;
+  // const sectionEl = useRef(null);
+  // const start = 13;
   //  const minus = -26;
   //  useEffect(() => {
   //    // console.log(sectionEl.current.style.left);
@@ -22,12 +23,17 @@ const GameItem = () => {
   //  });
 
   return (
-    <Styled.Container ref={sectionEl} style={{ left: `${start}` + "%" }}>
+    // <Styled.Container ref={sectionEl}>
+    <Styled.Container>
       {gamelist.map((item) => (
         <div className="item" key={item.id}>
           <img src={item.image} className="game-image" alt="gameImage" />
           <div className="detail-content">
-            <span className="location">{item.location}</span>
+            {item.location.length > 20 ? (
+              <span className="location">{item.location.slice(0, 24)}</span>
+            ) : (
+              <span className="location">{item.location}</span>
+            )}
             <div className="star-rating">
               <img src={star} alt="star" />
               <img src={star} alt="star" />
