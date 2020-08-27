@@ -13,7 +13,6 @@ const Home = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    console.log("pageYOffset", pageYOffset);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -21,7 +20,7 @@ const Home = () => {
 
   return (
     <>
-      <Header />
+      <Header pageYOffset={pageYOffset} />
       <Main />
       <Introduction />
       <Games />

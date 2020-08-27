@@ -8,11 +8,14 @@ const HeaderContainer = styled.header`
   position: fixed;
   width: 100%;
   height: 57px;
-  background: rgba(100, 100, 100, 0.6);
+
+  background: ${(props) =>
+    props.pageYOffset >= 50 ? "white" : "rgba(100, 100, 100, 0.6)"};
   display: flex;
   justify-content: space-around;
   align-items: center;
   z-index: 10;
+  transition: 0.3s;
 `;
 
 const Logo = styled.img`
@@ -29,9 +32,9 @@ const Logo = styled.img`
   }
 `;
 
-const Header = () => {
+const Header = ({ pageYOffset }) => {
   return (
-    <HeaderContainer>
+    <HeaderContainer pageYOffset={pageYOffset}>
       <Logo src={logoWhiteImage}></Logo>
       <Navigation />
     </HeaderContainer>
