@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import logoWhiteImage from "../../images/logo_color_white_horizontal.png";
+import logoBlackImage from "../../images/logo_color_black_horizontal.png";
 import Navigation from "../Navigation";
 import { device } from "../../device";
 
@@ -8,9 +9,8 @@ const HeaderContainer = styled.header`
   position: fixed;
   width: 100%;
   height: 57px;
-
   background: ${(props) =>
-    props.pageYOffset >= 50 ? "white" : "rgba(100, 100, 100, 0.6)"};
+    props.pageYOffset >= 50 ? "#fff" : "rgba(100, 100, 100, 0.6)"};
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -35,7 +35,7 @@ const Logo = styled.img`
 const Header = ({ pageYOffset }) => {
   return (
     <HeaderContainer pageYOffset={pageYOffset}>
-      <Logo src={logoWhiteImage}></Logo>
+      <Logo src={pageYOffset > 50 ? logoBlackImage : logoWhiteImage}></Logo>
       <Navigation />
     </HeaderContainer>
   );
