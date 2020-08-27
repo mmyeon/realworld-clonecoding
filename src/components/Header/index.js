@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import logoWhiteImage from "../../images/logo_color_white_horizontal.png";
 import logoBlackImage from "../../images/logo_color_black_horizontal.png";
@@ -10,7 +10,7 @@ const HeaderContainer = styled.header`
   width: 100%;
   height: 57px;
   background: ${(props) =>
-    props.pageYOffset >= 50 ? "#fff" : "rgba(100, 100, 100, 0.6)"};
+    props.isBackgroundWhite ? "#fff" : "rgba(100, 100, 100, 0.6)"};
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -32,11 +32,27 @@ const Logo = styled.img`
   }
 `;
 
-const Header = ({ pageYOffset }) => {
+const Header = () => {
+  const [pageYOffset, setPageYOffset] = useState(0);
+  const [isBackgroundWhite, setIsBackgroundWhite] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setPageYOffset(window.pageYOffset);
+
+      setIsBackgroundWhite(pageYOffset > 100 ? true : false);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [pageYOffset, isBackgroundWhite]);
+
   return (
-    <HeaderContainer pageYOffset={pageYOffset}>
-      <Logo src={pageYOffset > 50 ? logoBlackImage : logoWhiteImage}></Logo>
-      <Navigation />
+    <HeaderContainer isBackgroundWhite={isBackgroundWhite}>
+      <Logo src={isBackgroundWhite ? logoBlackImage : logoWhiteImage}></Logo>
+      <Navigation isBackgroundWhite={isBackgroundWhite} />
     </HeaderContainer>
   );
 };
