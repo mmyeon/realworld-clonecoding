@@ -32,7 +32,7 @@ const NavList = styled.ul`
   }
 `;
 
-const NavToggleIcon = styled.div`
+const ToggleButton = styled.div`
   @media ${device.tablet} {
     display: block;
     margin-right: 12px;
@@ -40,18 +40,22 @@ const NavToggleIcon = styled.div`
     flex-direction: column;
     padding: 6px 10px;
     border-radius: 6px;
-    border: 0.1px solid rgb(238 234 234 / 0.13);
+    border: 0.1px solid
+      ${(props) =>
+        props.isBackgroundWhite ? "rgba(0,0,0,.1)" : "rgb(238 234 234 / 0.13)"};
   }
 `;
 
 // TODO: 이름 변경하기
-const NavButtonInner = styled.div`
+const ToggleButtonInner = styled.div`
   @media ${device.tablet} {
     margin: 3px 4px;
-    background: rgb(251 247 247 / 60%);
+    background: ${(props) =>
+      props.isBackgroundWhite ? "rgba(0,0,0,.5)" : "rgb(251 247 247 / 60%)"};
     width: 22px;
     height: 2px;
+    z-index: 10;
   }
 `;
 
-export default { NavToggleIcon, NavButtonInner, NavList };
+export default { ToggleButton, ToggleButtonInner, NavList };

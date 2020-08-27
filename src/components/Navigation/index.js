@@ -4,11 +4,11 @@ import Styled from "./index.styles";
 const Navigation = ({ isBackgroundWhite }) => {
   return (
     <div className="container">
-      <Styled.NavToggleIcon>
-        <Styled.NavButtonInner />
-        <Styled.NavButtonInner />
-        <Styled.NavButtonInner />
-      </Styled.NavToggleIcon>
+      <Styled.ToggleButton isBackgroundWhite={isBackgroundWhite}>
+        <Styled.ToggleButtonInner isBackgroundWhite={isBackgroundWhite} />
+        <Styled.ToggleButtonInner isBackgroundWhite={isBackgroundWhite} />
+        <Styled.ToggleButtonInner isBackgroundWhite={isBackgroundWhite} />
+      </Styled.ToggleButton>
       <nav>
         <Styled.NavList isBackgroundWhite={isBackgroundWhite}>
           <li className="nav-item">홈</li>
