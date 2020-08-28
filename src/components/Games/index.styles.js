@@ -5,6 +5,7 @@ const Games = styled.section`
   width: 100%;
   height: 79vh;
   position: relative;
+  overflow: hidden;
 
   > .motif {
     position: absolute;
