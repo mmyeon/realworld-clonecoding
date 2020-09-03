@@ -3,9 +3,11 @@ import styled from "styled-components";
 const Games = styled.section`
   background: #fafafa;
   width: 100%;
-  height: 79vh;
+  /* TODO: 임시설정 */
+  height: 60vw;
   position: relative;
-  overflow: hidden;
+  /* TODO: 게임이미지 보이지 않게 overflow설정 */
+  /* overflow: hidden; */
 
   > .motif {
     position: absolute;
@@ -20,6 +22,14 @@ const Games = styled.section`
     margin-left: 13%;
     font-weight: 400;
     margin-bottom: 20px;
+  }
+
+  > .gamelist {
+    display: flex;
+    position: absolute;
+    /* TODO: 변경될 숫자 */
+    left: 192px;
+    transition: 0.5s;
   }
 `;
 
