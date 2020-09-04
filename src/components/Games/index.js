@@ -3,9 +3,11 @@ import Styled from "../Games/index.styles";
 import motif from "../../images/game-collection/motif-blue.svg";
 import GameItem from "../GameItem/index";
 import Button from "../Button";
-import gamelist from "../../gamelist.js";
+import gameList from "../../gameList.js";
 
 const index = () => {
+  const visibleImages = [...gameList, ...gameList];
+
   return (
     <Styled.Games>
       <img src={motif} className="motif" alt="game-motif" />
@@ -14,10 +16,8 @@ const index = () => {
       </h2>
       {/* TODO: gamelist가 left 이동하기*/}
       <section className="gamelist">
-        {gamelist.map((item) => (
-          <>
-            <GameItem item={item} key={item.id} />
-          </>
+        {visibleImages.map((item, i) => (
+          <GameItem item={item} key={i} />
         ))}
       </section>
       <Button
