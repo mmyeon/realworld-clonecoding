@@ -7,7 +7,7 @@ const Games = styled.section`
   height: 60vw;
   position: relative;
   /* TODO: 게임이미지 보이지 않게 overflow설정 */
-  /* overflow: hidden; */
+  overflow: hidden;
 
   > .motif {
     position: absolute;
@@ -29,7 +29,7 @@ const Games = styled.section`
     position: absolute;
     /* TODO: 변경될 숫자 */
     left: 192px;
-    transition: 0.5s;
+    transition: 0.9s;
   }
 `;
 
