@@ -11,11 +11,18 @@ const HeaderContainer = styled.header`
   height: 57px;
   background: ${(props) =>
     props.isBackgroundWhite ? "#fff" : "rgba(100, 100, 100, 0.6)"};
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+
   z-index: 10;
   transition: 0.3s;
+
+  > .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
 `;
 
 const Logo = styled.img`
@@ -51,8 +58,10 @@ const Header = () => {
 
   return (
     <HeaderContainer isBackgroundWhite={isBackgroundWhite}>
-      <Logo src={isBackgroundWhite ? logoBlackImage : logoWhiteImage}></Logo>
-      <Navigation isBackgroundWhite={isBackgroundWhite} />
+      <div className="container">
+        <Logo src={isBackgroundWhite ? logoBlackImage : logoWhiteImage}></Logo>
+        <Navigation isBackgroundWhite={isBackgroundWhite} />
+      </div>
     </HeaderContainer>
   );
 };
