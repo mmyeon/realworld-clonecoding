@@ -8,20 +8,32 @@ import { device } from "../../device";
 const HeaderContainer = styled.header`
   position: fixed;
   width: 100%;
-  height: 57px;
-  background: ${(props) =>
-    props.isBackgroundWhite ? "#fff" : "rgba(100, 100, 100, 0.6)"};
-
+  height: 56px;
+  background: ${(props) => (props.isBackgroundWhite ? "#fff" : "#05040469")};
   z-index: 10;
   transition: 0.3s;
 
   > .container {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
     height: 100%;
     max-width: 1140px;
     margin: 0 auto;
+    justify-content: space-between;
+    padding: 0 1%;
+
+    @media all and (max-width: 1199px) {
+      max-width: 954px;
+    }
+
+    @media all and (max-width: 991px) {
+      max-width: 755px;
+    }
+
+    @media all and (max-width: 767px) {
+      max-width: 575px;
+    }
   }
 `;
 
@@ -32,8 +44,10 @@ const Logo = styled.img`
   margin-right: 260px;
 
   @media ${device.tablet} {
+    max-width: 954px;
     margin-right: 450px;
   }
+
   @media ${device.mobileL} {
     margin-right: 260px;
   }

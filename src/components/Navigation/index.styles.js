@@ -5,6 +5,7 @@ const NavList = styled.ul`
   display: flex;
   color: ${(props) => (props.isBackgroundWhite ? "#1e112c" : "#fff")};
   z-index: 10;
+  margin-right: 7px;
 
   @media ${device.tablet} {
     /* TODO: 나중에 보이도록 수정 */
@@ -20,7 +21,7 @@ const NavList = styled.ul`
   }
 
   .nav-item {
-    padding: 10px 12px;
+    padding: 12.5px;
     cursor: pointer;
     font-weight: 600;
     font-size: 14px;
