@@ -15,7 +15,6 @@ const HeaderContainer = styled.header`
 
   > .container {
     display: flex;
-    /* justify-content: space-around; */
     align-items: center;
     height: 100%;
     max-width: 1140px;
@@ -41,15 +40,9 @@ const Logo = styled.img`
   width: 170px;
   padding-left: 10px;
   cursor: pointer;
-  margin-right: 260px;
 
   @media ${device.tablet} {
     max-width: 954px;
-    margin-right: 450px;
-  }
-
-  @media ${device.mobileL} {
-    margin-right: 260px;
   }
 `;
 
