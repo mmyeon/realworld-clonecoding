@@ -9,13 +9,12 @@ import { device } from "../../device";
 const MainContainer = styled.div`
   width: 100%;
   height: 100vh;
-  background-image:url("${backgroundImage}");
-  background-size:cover;
+  background-image: url("${backgroundImage}");
+  background-size: cover;
   background-position: center right;
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-
 `;
 
 const MainContent = styled.div`
@@ -23,7 +22,6 @@ const MainContent = styled.div`
   margin: 0 auto;
 
   @media ${device.mobileL} {
-    /* width: 40%; */
     color: white;
     font-weight: 800;
   }
