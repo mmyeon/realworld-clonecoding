@@ -8,16 +8,15 @@ const NavList = styled.ul`
   margin-right: 7px;
 
   @media ${device.tablet} {
-    /* TODO: 나중에 보이도록 수정 */
     display: none;
     left: 0;
-    top: 57px;
+    top: 55.5px;
     flex-direction: column;
     padding: 0 80px;
     padding-bottom: 8px;
     position: absolute;
     width: 100%;
-    background: rgba(100, 100, 100, 0.6);
+    background: ${(props) => (props.isBackgroundWhite ? "#fff" : "#05040469")};
   }
 
   .nav-item {

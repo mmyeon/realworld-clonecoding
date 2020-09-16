@@ -1,16 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import Styled from "./index.styles";
 
 const Navigation = ({ isBackgroundWhite }) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  function handleClick() {
+    setIsVisible(!isVisible);
+  }
+
   return (
-    <div className="container">
+    <div className="container" onClick={handleClick}>
       <Styled.ToggleButton isBackgroundWhite={isBackgroundWhite}>
         <Styled.ToggleButtonInner isBackgroundWhite={isBackgroundWhite} />
         <Styled.ToggleButtonInner isBackgroundWhite={isBackgroundWhite} />
         <Styled.ToggleButtonInner isBackgroundWhite={isBackgroundWhite} />
       </Styled.ToggleButton>
       <nav>
-        <Styled.NavList isBackgroundWhite={isBackgroundWhite}>
+        <Styled.NavList
+          isBackgroundWhite={isBackgroundWhite}
+          style={isVisible ? { display: "block" } : { display: "none" }}
+        >
           <li className="nav-item">홈</li>
           <li className="nav-item">소개</li>
           <li className="nav-item">게임 목록</li>
