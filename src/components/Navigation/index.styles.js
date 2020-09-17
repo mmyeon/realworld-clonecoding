@@ -7,8 +7,15 @@ const NavList = styled.ul`
   z-index: 10;
   margin-right: 7px;
 
+  @media all and (max-width: 991px) {
+    max-width: 755px;
+  }
+
+  @media all and (max-width: 767px) {
+    max-width: 575px;
+  }
+
   @media ${device.tablet} {
-    display: none;
     left: 0;
     top: 55.5px;
     flex-direction: column;
@@ -16,11 +23,14 @@ const NavList = styled.ul`
     padding-bottom: 8px;
     position: absolute;
     width: 100%;
-    background: ${(props) => (props.isBackgroundWhite ? "#fff" : "#05040469")};
+    margin: 0 15px;
+    /* background: ${(props) =>
+      props.isBackgroundWhite ? "#fff" : "#05040469"}; */
   }
 
   .nav-item {
-    padding: 12.5px;
+    /* padding: 12.5px; */
+    padding: 10.5px 7px;
     cursor: pointer;
     font-weight: 600;
     font-size: 14px;
@@ -29,13 +39,22 @@ const NavList = styled.ul`
       background: ${(props) =>
         props.isBackgroundWhite ? "rgba(100, 100, 100, 0.6)" : "#1e112c"};
     }
+
+    /* @media all and (max-width: 991px) {
+      max-width: 755px;
+    }
+
+    @media all and (max-width: 767px) {
+      max-width: 575px;
+    } */
   }
 `;
 
 const ToggleButton = styled.div`
+  display: none;
+
   @media ${device.tablet} {
     display: block;
-    margin-right: 12px;
     display: flex;
     flex-direction: column;
     padding: 6px 10px;
