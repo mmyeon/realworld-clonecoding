@@ -98,6 +98,7 @@ const NavList = styled.ul`
 
 const ToggleButton = styled.div`
   display: none;
+  cursor: pointer;
 
   @media ${device.tablet} {
     display: block;
