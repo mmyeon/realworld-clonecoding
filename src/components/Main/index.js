@@ -8,10 +8,10 @@ const Main = () => {
         <Styled.MainTitle>
           <p>리얼월드를 만나면</p>
           <p>
-            세상은 <b>거대한 놀이터</b>가 되고
+            세상은 <span>거대한 놀이터</span>가 되고
           </p>
           <p>
-            우리 모두는 <b>플레이어</b>가 됩니다.
+            우리 모두는 <span>플레이어</span>가 됩니다.
           </p>
         </Styled.MainTitle>
         <Styled.DownloadButtons>

@@ -41,10 +41,13 @@ const MainContent = styled.div`
 `;
 
 const MainTitle = styled.div`
-  font-size: 2.7rem;
-  font-weight: 500;
-  letter-spacing: 1px;
-  line-height: 61px;
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 1.1px;
+
+  span {
+    font-weight: 800;
 
   @media ${device.mobileL} {
     color: white;
@@ -65,7 +68,7 @@ const DownloadButtons = styled.div`
 
     .appStore {
       background-image: url(${blackAppStore});
-      margin-right: 18px;
+      margin-right: 19px;
 
       @media ${device.mobileL} {
         background-image: url(${whiteAppStore});
