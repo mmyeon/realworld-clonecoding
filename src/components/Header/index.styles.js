@@ -23,33 +23,39 @@ const HeaderContainer = styled.header`
     position: relative;
     max-width: 1090px;
     margin: 6.5px auto;
-    /* padding: 0 15px; */
 
     @media all and (max-width: 1199px) {
-      max-width: 954px;
+      max-width: 912px;
     }
 
     @media all and (max-width: 991px) {
       height: 56px;
-      max-width: 755px;
+      max-width: 720px;
       margin: 9px auto;
     }
 
     @media all and (max-width: 767px) {
-      max-width: 575px;
+      max-width: 540px;
+    }
+
+    @media all and (max-width: 575px) {
+      max-width: 527px;
     }
 
     > .wrapper {
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      @media all and (max-width: 575px) {
+        padding: 0 14px;
+      }
     }
   }
 `;
 
 const Logo = styled.img`
   width: 170px;
-  /* padding-left: 10px; */
   cursor: pointer;
 
   @media ${device.tablet} {
@@ -68,25 +74,22 @@ const NavList = styled.ul`
   }
 
   @media ${device.tablet} {
-    margin: 9px auto;
-    max-width: 755px;
+    margin: 4px auto;
     left: 0;
     top: 40.5px;
-    margin-top: 5px;
     flex-direction: column;
-    padding: 0 15px;
     position: absolute;
     width: 100%;
   }
 
   .nav-item {
-    padding: 10.5px;
+    padding: 10.5px 13px;
     cursor: pointer;
     font-weight: 600;
     font-size: 14px;
 
-    @media ${device.tablet} {
-      margin-left: 10px;
+    @media all and (max-width: 575px) {
+      margin-left: 15px;
     }
 
     &:hover {
