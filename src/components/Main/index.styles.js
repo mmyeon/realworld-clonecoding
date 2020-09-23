@@ -18,8 +18,21 @@ const MainContainer = styled.div`
 `;
 
 const MainContent = styled.div`
-  width: 80%;
+  max-width: 1090px;
+  width: 100%;
   margin: 0 auto;
+
+  @media all and (max-width: 1199px) {
+    max-width: 954px;
+  }
+
+  @media all and (max-width: 991px) {
+    max-width: 755px;
+  }
+
+  @media all and (max-width: 767px) {
+    max-width: 575px;
+  }
 
   @media ${device.mobileL} {
     color: white;

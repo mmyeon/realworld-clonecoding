@@ -21,9 +21,9 @@ const HeaderContainer = styled.header`
 
   > .container {
     position: relative;
-    max-width: 1140px;
+    max-width: 1090px;
     margin: 6.5px auto;
-    padding: 0 15px;
+    /* padding: 0 15px; */
 
     @media all and (max-width: 1199px) {
       max-width: 954px;
@@ -49,7 +49,7 @@ const HeaderContainer = styled.header`
 
 const Logo = styled.img`
   width: 170px;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   cursor: pointer;
 
   @media ${device.tablet} {
