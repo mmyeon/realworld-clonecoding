@@ -56,26 +56,28 @@ const DownloadButtons = styled.div`
   margin-top: 40px;
   display: flex;
 
-  > .button {
-    width: 216px;
-    height: 70px;
-    cursor: pointer;
-  }
-
-  > .appStore {
-    background-image: url(${blackAppStore});
-    margin-right: 18px;
-
-    @media ${device.mobileL} {
-      background-image: url(${whiteAppStore});
+  > a {
+    .button {
+      width: 216px;
+      height: 70px;
+      cursor: pointer;
     }
-  }
 
-  > .googlePlay {
-    background-image: url(${blackGooglePlay});
+    .appStore {
+      background-image: url(${blackAppStore});
+      margin-right: 18px;
 
-    @media ${device.mobileL} {
-      background-image: url(${whiteGooglePlay});
+      @media ${device.mobileL} {
+        background-image: url(${whiteAppStore});
+      }
+    }
+
+    .googlePlay {
+      background-image: url(${blackGooglePlay});
+
+      @media ${device.mobileL} {
+        background-image: url(${whiteGooglePlay});
+      }
     }
   }
 `;
