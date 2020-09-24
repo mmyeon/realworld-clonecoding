@@ -1,14 +1,10 @@
 import styled from "styled-components";
-// import { device } from "../../device";
-// import backgroundImage from "../../images/background-graphic.svg";
 
 const Container = styled.section`
   width: 100%;
-  height: 77vh;
+  height: 720px;
   position: relative;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
 
   > .background-graphic {
     position: absolute;
@@ -16,51 +12,73 @@ const Container = styled.section`
     top: 114px;
   }
 
-  > .mockup-image {
-    max-width: 415px;
-    width: 90%;
-    position: relative;
-    top: 172px;
-    margin-right: 50px;
+  @media all and (max-width: 767px) {
+    height: 920px;
   }
 
-  > .text-container {
-    width: 27%;
-    top: 272px;
-    position: relative;
+  .content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 92%;
 
-    h1.title {
-      font-weight: 400;
-      font-size: 2rem;
-      line-height: 3rem;
-      margin-bottom: 1.5rem;
+    @media all and (max-width: 1199px) {
+      max-width: 912px;
     }
 
-    > .title-desc {
-      font-weight: 500;
-      font-size: 1.19rem;
-      color: #626262;
-      line-height: 28px;
+    @media all and (max-width: 991px) {
+      max-width: 720px;
     }
 
-    > .button {
-      border-radius: 45px;
-      border: 1px solid #c869ff;
-      width: 195px;
-      height: 34px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 25px;
-      font-weight: 800;
-      margin-top: 20px;
-      font-size: 1.1rem;
-      cursor: pointer;
-      transition: 0.5s;
+    @media all and (max-width: 767px) {
+      max-width: 540px;
+    }
 
-      &:hover {
-        background: #c869ff;
-        color: white;
+    /* @media all and (max-width: 575px) {
+      max-width: 527px;
+    } */
+
+    > .mockup-image {
+      max-width: 373px;
+      position: relative;
+      top: 148px;
+      margin-right: 45px;
+    }
+
+    > .text-container {
+      z-index: 5;
+
+      h1.title {
+        font-weight: 500;
+        font-size: 2.1rem;
+        line-height: 3rem;
+        margin-bottom: 1.2rem;
+      }
+
+      > .title-desc {
+        font-weight: 500;
+        font-size: 1.19rem;
+        color: #626262;
+        line-height: 28px;
+        margin-bottom: 20px;
+      }
+
+      > .button {
+        border-radius: 45px;
+        border: 1px solid #c869ff;
+        display: inline-block;
+        margin: 0 auto;
+        padding: 11px 31px;
+        font-weight: 800;
+        font-size: 17px;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+          background: #c869ff;
+          color: white;
+        }
       }
     }
   }
