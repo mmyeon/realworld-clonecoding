@@ -6,14 +6,30 @@ const Container = styled.section`
   position: relative;
   overflow: hidden;
 
+  @media all and (max-width: 767px) {
+    height: 920px;
+  }
+
   > .background-graphic {
     position: absolute;
     right: -104px;
     top: 114px;
-  }
+    z-index: -1;
 
-  @media all and (max-width: 767px) {
-    height: 920px;
+    @media all and (max-width: 990px) {
+      right: -29%;
+      top: 50px;
+    }
+
+    @media all and (max-width: 767px) {
+      right: -39%;
+      top: 34%;
+    }
+
+    @media all and (max-width: 575px) {
+      right: -53%;
+      top: -28%;
+    }
   }
 
   .content-container {
@@ -21,7 +37,9 @@ const Container = styled.section`
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    width: 92%;
+    padding: 0px 25px;
+    width: 100%;
+    height: 100%;
 
     @media all and (max-width: 1199px) {
       max-width: 912px;
@@ -33,27 +51,74 @@ const Container = styled.section`
 
     @media all and (max-width: 767px) {
       max-width: 540px;
+      flex-direction: column;
+      padding-bottom: 40px;
     }
 
-    /* @media all and (max-width: 575px) {
-      max-width: 527px;
-    } */
+    @media all and (max-width: 420px) {
+      padding-bottom: 80px;
+    }
 
-    > .mockup-image {
-      max-width: 373px;
-      position: relative;
-      top: 148px;
-      margin-right: 45px;
+    .img-container {
+      @media all and (max-width: 991px) {
+        margin-right: 40px;
+      }
+
+      @media all and (max-width: 767px) {
+        height: 590px;
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        margin: 0 auto;
+      }
+
+      > .mockup-image {
+        max-width: 373px;
+        width: 100%;
+        position: relative;
+        margin-right: 45px;
+        bottom: -164px;
+
+        @media all and (max-width: 991px) {
+          bottom: -106px;
+        }
+
+        @media all and (max-width: 767px) {
+          margin: 0 auto;
+          padding: 0 20px;
+        }
+      }
     }
 
     > .text-container {
-      z-index: 5;
+      @media all and (max-width: 767px) {
+        text-align: center;
+      }
 
       h1.title {
         font-weight: 500;
         font-size: 2.1rem;
         line-height: 3rem;
         margin-bottom: 1.2rem;
+
+        @media all and (max-width: 991px) {
+          word-break: keep-all;
+          /* width: 72%; */
+        }
+
+        @media all and (max-width: 767px) {
+          width: 100%;
+        }
+
+        @media all and (max-width: 420px) {
+          line-height: 1.5;
+          font-size: 25px;
+        }
+
+        .text-bold {
+          font-weight: 700;
+        }
       }
 
       > .title-desc {
@@ -62,6 +127,7 @@ const Container = styled.section`
         color: #626262;
         line-height: 28px;
         margin-bottom: 20px;
+        word-break: keep-all;
       }
 
       > .button {
