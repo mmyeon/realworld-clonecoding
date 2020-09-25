@@ -15,7 +15,12 @@ const Index = () => {
       // TODO: 점점 이미지가 조금 넘어감(넘어가는 속도가 빨라짐 )
 
       slideRef.current.style.transform = `translate(${(start -= 400)}px)`;
+
+      if (start === -400) {
+        clearInterval(id);
+      }
     }, 2500);
+
     return () => {
       clearInterval(id);
     };
