@@ -30,8 +30,9 @@ const Header = () => {
           <a href="/">
             <Styled.Logo
               src={isBackgroundWhite ? logoBlackImage : logoWhiteImage}
-            ></Styled.Logo>
+            />
           </a>
+
           <nav className="container">
             <Styled.ToggleButton
               isBackgroundWhite={isBackgroundWhite}
@@ -41,6 +42,7 @@ const Header = () => {
               <Styled.ToggleButtonInner isBackgroundWhite={isBackgroundWhite} />
               <Styled.ToggleButtonInner isBackgroundWhite={isBackgroundWhite} />
             </Styled.ToggleButton>
+
             <Styled.NavList
               isBackgroundWhite={isBackgroundWhite}
               isOpenedNav={isOpenedNav}
@@ -48,15 +50,19 @@ const Header = () => {
               <a href="/">
                 <li className="nav-item">홈</li>
               </a>
+
               <a href="https://realworld.to/About">
                 <li className="nav-item">소개</li>
               </a>
+
               <a href="https://realworld.to/projects">
                 <li className="nav-item">게임 목록</li>
               </a>
+
               <a href="https://realworld.to/boards/news">
                 <li className="nav-item">뉴스</li>
               </a>
+
               <a
                 href="https://smartstore.naver.com/realworld"
                 target="_blank"
@@ -64,6 +70,7 @@ const Header = () => {
               >
                 <li className="nav-item">SHOP</li>
               </a>
+
               <a
                 href="https://uniquegood.biz/"
                 target="_blank"

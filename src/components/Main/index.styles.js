@@ -1,11 +1,12 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import backgroundImage from "../../images/main-image.jpg";
 import mainPortrait from "../../images/main_portrait.jpg";
 import whiteAppStore from "../../images/appstore-white.png";
 import whiteGooglePlay from "../../images/googleplay-white.png";
 import { device } from "../../device";
+import { mobile } from "../../styles/functions";
 
-const MainContainer = styled.div`
+const MainContainer = styled.section`
   width: 100%;
   height: 100vh;
   background-image: url("${backgroundImage}");
@@ -71,7 +72,20 @@ const MainTitle = styled.div`
     font-size: 1.5rem;
     line-height: 33px;
     text-align: center;
+    color: red;
   }
+
+  /* ${mobile(
+    "xs",
+    css`
+      max-width: 527px;
+      font-size: 1.5rem;
+      line-height: 33px;
+      text-align: center;
+      color: blue;
+    `
+  )} */
+
   @media all and (max-width: 362px) {
     width: 75%;
     margin: 0 auto;
@@ -104,6 +118,9 @@ const DownloadButtons = styled.div`
       max-width: 216px;
       height: auto;
       cursor: pointer;
+
+      /* &.appStore {
+      } */
     }
 
     .appStore {

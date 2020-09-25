@@ -9,9 +9,13 @@ const Home = () => {
   return (
     <>
       <Header />
+
       <Main />
+
       <Introduction />
+
       <Games />
+
       {/* <Howto /> */}
     </>
   );
