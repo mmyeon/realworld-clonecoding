@@ -16,7 +16,7 @@ const Home = () => {
 
       <Games />
 
-      {/* <Howto /> */}
+      <Howto />
     </>
   );
 };

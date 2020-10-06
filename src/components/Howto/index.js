@@ -13,29 +13,26 @@ const index = () => {
         src={backgroundImage}
         alt="background line"
       />
-      <h1 className="main-title">
-        <span className="bold">리얼월드</span>를 즐기고 싶다면?
-      </h1>
 
-      <div className="howto-container">
-        <Styled.Step>
-          <img src={howto1} alt="step one" />
-          <p>
-            리얼월드 앱을
-            <br></br>다운로드받으세요
-          </p>
-        </Styled.Step>
-        <Styled.Step>
-          <img src={howto2} alt="step two" />
-          <p>원하는 게임을 선택하세요</p>
-        </Styled.Step>
-        <Styled.Step>
-          <img src={howto3} alt="step three" />
-          <p>
-            게임의 주인공이 되어 미션을
-            <br></br>해결하세요!
-          </p>
-        </Styled.Step>
+      <div className="howto-content">
+        <h1 className="main-title">
+          <span className="bold">리얼월드</span>를 즐기고 싶다면?
+        </h1>
+
+        <div className="howto-container">
+          <Styled.Step>
+            <img src={howto1} alt="step one" />
+            <p>리얼월드 앱을 다운로드받으세요</p>
+          </Styled.Step>
+          <Styled.Step>
+            <img src={howto2} alt="step two" />
+            <p>원하는 게임을 선택하세요</p>
+          </Styled.Step>
+          <Styled.Step>
+            <img src={howto3} alt="step three" />
+            <p>게임의 주인공이 되어 미션을 해결하세요!</p>
+          </Styled.Step>
+        </div>
       </div>
     </Styled.Howto>
   );
