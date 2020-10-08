@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__chevron-right-ingame-dark" width="17.906" height="17.906" viewBox="0 0 17.906 17.906">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:none}
+        </style>
+    </defs>
+    <path id="prefix__사각형_1131" d="M0 0H17.906V17.906H0z" class="prefix__cls-1" data-name="사각형 1131"/>
+    <path id="prefix__사각형_1132" d="M0 0H17.906V17.906H0z" class="prefix__cls-1" data-name="사각형 1132"/>
+    <path id="prefix__패스_217" fill="#c869ff" d="M7.088 15.647a.65.65 0 0 1-.471-1.1L11.784 9.1 6.619 3.733a.65.65 0 1 1 .937-.9l5.6 5.82a.649.649 0 0 1 0 .9l-5.6 5.9a.65.65 0 0 1-.468.194z" data-name="패스 217"/>
+</svg>

@@ -4,6 +4,7 @@ import Main from "../components/Main";
 import Introduction from "../components/Introduction";
 import Games from "../components/Games/index";
 import Howto from "../components/Howto/index";
+import Review from "../components/Review/index";
 
 const Home = () => {
   return (
@@ -17,6 +18,8 @@ const Home = () => {
       <Games />
 
       <Howto />
+
+      <Review />
     </>
   );
 };
