@@ -129,23 +129,6 @@ const Container = styled.section`
         margin-bottom: 20px;
         word-break: keep-all;
       }
-
-      > .button {
-        border-radius: 45px;
-        border: 1px solid #c869ff;
-        display: inline-block;
-        margin: 0 auto;
-        padding: 11px 31px;
-        font-weight: 800;
-        font-size: 17px;
-        cursor: pointer;
-        transition: 0.5s;
-
-        &:hover {
-          background: #c869ff;
-          color: white;
-        }
-      }
     }
   }
 `;

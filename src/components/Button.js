@@ -1,36 +1,53 @@
 import React from "react";
 import styled from "styled-components";
 
-const ButtonStyle = styled.div`
+const Container = styled.div`
+  display: flex;
+`;
+
+const ButtonStyle = styled.a`
   border-radius: 45px;
   border: 1px solid #c869ff;
-  /* width: 195px; */
-  width: ${(props) => props.width || "195px"};
-  height: 34px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: ${(props) => props.padding || "25px"};
   font-weight: 800;
-  margin-top: 20px;
-  font-size: 1.1rem;
+  font-size: 17px;
   cursor: pointer;
   transition: 0.5s;
-  margin: ${(props) => props.margin};
+  display: inline-block;
+
   top: ${(props) => props.top};
   position: ${(props) => props.position};
+  margin: ${(props) => props.margin || "0 auto"};
+  padding: ${(props) => props.padding || "12px 80px"};
+  margin-top: ${(props) => props.marginTop};
 
   &:hover {
     background: #c869ff;
-    color: white;
+    color: #fff;
   }
 `;
 
-const Button = ({ content, top, position, margin, width }) => {
+const Button = ({
+  content,
+  href,
+  top,
+  position,
+  padding,
+  margin,
+  marginTop,
+}) => {
   return (
-    <ButtonStyle top={top} position={position} margin={margin} width={width}>
-      {content}
-    </ButtonStyle>
+    <Container>
+      <ButtonStyle
+        href={href}
+        top={top}
+        position={position}
+        padding={padding}
+        margin={margin}
+        marginTop={marginTop}
+      >
+        {content}
+      </ButtonStyle>
+    </Container>
   );
 };
 

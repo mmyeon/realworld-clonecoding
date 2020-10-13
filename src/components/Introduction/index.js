@@ -2,6 +2,7 @@ import React from "react";
 import Styled from "./index.styles";
 import backgroundImage from "../../images/background-graphic.svg";
 import mockupImage from "../../images/mockup-mainpage.png";
+import Button from "../Button";
 
 const Introduction = () => {
   return (
@@ -32,9 +33,12 @@ const Introduction = () => {
             방식을 <span>만들어나갑니다.</span>
           </p>
 
-          <a href="https://realworld.to/about" className="button">
-            리얼월드 소개 보기
-          </a>
+          <Button
+            href="https://realworld.to/about"
+            content="리얼월드 소개 보기"
+            padding="12px 30px"
+            margin="0"
+          />
         </div>
       </div>
     </Styled.Container>
