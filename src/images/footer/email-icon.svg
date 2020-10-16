@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33.132" height="33.132" viewBox="0 0 33.132 33.132">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#fff}
+        </style>
+    </defs>
+    <g id="prefix__email-icon" transform="translate(-917.001 -5460.578)">
+        <path id="prefix__패스_223" fill="#2c81af" d="M557.708 752.37a16.566 16.566 0 1 1-16.567-16.57 16.567 16.567 0 0 1 16.566 16.566zm0 0" data-name="패스 223" transform="translate(392.426 4724.775)"/>
+        <g id="prefix__email" transform="translate(925.053 5470.81)">
+            <path id="prefix__패스_224" d="M165.135 48.864c0-.02.013-.039.013-.058l-5.218 5.028 5.212 4.867c0-.035-.006-.07-.006-.105z" class="prefix__cls-2" data-name="패스 224" transform="translate(-148.048 -47.638)"/>
+            <path id="prefix__패스_225" d="M21.277 126.9l-2.13 2.05a.557.557 0 0 1-.766.006l-2.124-1.98-5.246 5.057a1.209 1.209 0 0 0 .408.081H26.1a1.208 1.208 0 0 0 .586-.162z" class="prefix__cls-2" data-name="패스 225" transform="translate(-10.192 -119.931)"/>
+            <path id="prefix__패스_226" d="M14.237 40.935l7.963-7.671a1.207 1.207 0 0 0-.615-.179H6.9a1.21 1.21 0 0 0-.77.287z" class="prefix__cls-2" data-name="패스 226" transform="translate(-5.675 -33.085)"/>
+            <path id="prefix__패스_227" d="M0 52.1v9.545a1.212 1.212 0 0 0 .053.316l5.181-4.989z" class="prefix__cls-2" data-name="패스 227" transform="translate(0 -50.687)"/>
+        </g>
+    </g>
+</svg>

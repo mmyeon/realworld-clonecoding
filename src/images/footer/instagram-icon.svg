@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__instagram-icon" width="33.78" height="33.78" viewBox="0 0 33.78 33.78">
+    <defs>
+        <radialGradient id="prefix__radial-gradient" cx=".351" cy=".975" r=".99" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#fec053"/>
+            <stop offset=".327" stop-color="#f2203e"/>
+            <stop offset=".648" stop-color="#b729a8"/>
+            <stop offset="1" stop-color="#5342d6"/>
+        </radialGradient>
+        <style>
+            .prefix__cls-2{fill:#fff}
+        </style>
+    </defs>
+    <path id="prefix__패스_209" fill="url(#prefix__radial-gradient)" d="M558.355 752.694a16.89 16.89 0 1 1-16.89-16.89 16.89 16.89 0 0 1 16.89 16.89zm0 0" data-name="패스 209" transform="translate(-524.575 -735.804)"/>
+    <g id="prefix__그룹_404" data-name="그룹 404" transform="translate(6.12 6.12)">
+        <g id="prefix__그룹_401" data-name="그룹 401">
+            <path id="prefix__패스_219" d="M556.573 773.933h-9.279a6.137 6.137 0 0 1-6.13-6.13v-9.279a6.138 6.138 0 0 1 6.13-6.131h9.279a6.138 6.138 0 0 1 6.131 6.131v9.276a6.137 6.137 0 0 1-6.131 6.133zm-9.279-19.693a4.289 4.289 0 0 0-4.284 4.284v9.276a4.289 4.289 0 0 0 4.284 4.284h9.279a4.289 4.289 0 0 0 4.284-4.284v-9.279a4.289 4.289 0 0 0-4.284-4.284z" class="prefix__cls-2" data-name="패스 219" transform="translate(-541.164 -752.393)"/>
+        </g>
+        <g id="prefix__그룹_402" data-name="그룹 402" transform="translate(5.255 5.255)">
+            <path id="prefix__패스_220" d="M560.482 777.226a5.515 5.515 0 1 1 5.518-5.515 5.521 5.521 0 0 1-5.518 5.515zm0-9.184a3.669 3.669 0 1 0 3.669 3.669 3.673 3.673 0 0 0-3.669-3.669z" class="prefix__cls-2" data-name="패스 220" transform="translate(-554.967 -766.196)"/>
+        </g>
+        <g id="prefix__그룹_403" data-name="그룹 403" transform="translate(15.196 3.614)">
+            <path id="prefix__패스_221" d="M583.732 763.211a1.325 1.325 0 1 1-1.325-1.326 1.326 1.326 0 0 1 1.325 1.326z" class="prefix__cls-2" data-name="패스 221" transform="translate(-581.081 -761.885)"/>
+        </g>
+    </g>
+</svg>

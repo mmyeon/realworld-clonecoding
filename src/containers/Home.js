@@ -6,6 +6,7 @@ import Games from "../components/Games/index";
 import Howto from "../components/Howto/index";
 import Review from "../components/Review/index";
 import Video from "../components/Video/index";
+import Footer from "../components/Footer/index";
 
 const Home = () => {
   return (
@@ -23,6 +24,8 @@ const Home = () => {
       <Review />
 
       <Video />
+
+      <Footer />
     </>
   );
 };
