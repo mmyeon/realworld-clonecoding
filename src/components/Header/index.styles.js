@@ -9,12 +9,12 @@ const HeaderContainer = styled.header`
   background: ${(props) => (props.isBackgroundWhite ? "#fff" : "#05040469")};
   z-index: 10;
   transition: 0.5s;
+  padding: 0.5rem 1rem;
 
   &.active {
-    height: 296px;
+    height: 289px;
 
-    /* TODO: min-width / max-width 통일하기 */
-    @media all and (min-width: 991px) {
+    @media all and (min-width: 992px) {
       height: 56px;
     }
   }
@@ -22,16 +22,17 @@ const HeaderContainer = styled.header`
   > .container {
     position: relative;
     max-width: 1090px;
-    margin: 6.5px auto;
+    margin: 0 auto;
 
     @media all and (max-width: 1199px) {
       max-width: 912px;
     }
 
     @media all and (max-width: 991px) {
-      height: 56px;
       max-width: 720px;
-      margin: 9px auto;
+
+      margin-left: auto;
+      margin-right: auto;
     }
 
     @media all and (max-width: 767px) {
@@ -46,10 +47,6 @@ const HeaderContainer = styled.header`
       display: flex;
       align-items: center;
       justify-content: space-between;
-
-      @media all and (max-width: 575px) {
-        padding: 0 14px;
-      }
     }
   }
 `;
@@ -72,6 +69,9 @@ const NavList = styled.ul`
   @media all and (max-width: 767px) {
     max-width: 575px;
   }
+  @media all and (max-width: 575px) {
+    max-width: 527px;
+  }
 
   @media ${device.tablet} {
     margin: 4px auto;
@@ -83,14 +83,13 @@ const NavList = styled.ul`
   }
 
   .nav-item {
-    padding: 10.5px 13px;
     cursor: pointer;
     font-weight: 600;
     font-size: 14px;
-
-    @media all and (max-width: 575px) {
-      margin-left: 15px;
-    }
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     &:hover {
       background: ${(props) =>

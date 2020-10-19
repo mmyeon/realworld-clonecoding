@@ -47,7 +47,41 @@ const Header = () => {
               isBackgroundWhite={isBackgroundWhite}
               isOpenedNav={isOpenedNav}
             >
-              <a href="/">
+              <li className="nav-item">
+                <a href="/">홈</a>
+              </li>
+
+              <li className="nav-item">
+                <a href="https://realworld.to/About">소개</a>
+              </li>
+              <li className="nav-item">
+                <a href="https://realworld.to/projects">게임 목록</a>
+              </li>
+
+              <li className="nav-item">
+                <a href="https://realworld.to/boards/news">뉴스</a>
+              </li>
+
+              <li className="nav-item">
+                <a
+                  href="https://smartstore.naver.com/realworld"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  SHOP
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a
+                  href="https://uniquegood.biz/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  유니크굿컴퍼니
+                </a>
+              </li>
+              {/* <a href="/">
                 <li className="nav-item">홈</li>
               </a>
 
@@ -77,7 +111,7 @@ const Header = () => {
                 rel="noopener noreferrer"
               >
                 <li className="nav-item">유니크굿컴퍼니</li>
-              </a>
+              </a> */}
             </Styled.NavList>
           </nav>
         </div>
