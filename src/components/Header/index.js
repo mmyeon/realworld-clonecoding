@@ -81,37 +81,6 @@ const Header = () => {
                   유니크굿컴퍼니
                 </a>
               </li>
-              {/* <a href="/">
-                <li className="nav-item">홈</li>
-              </a>
-
-              <a href="https://realworld.to/About">
-                <li className="nav-item">소개</li>
-              </a>
-
-              <a href="https://realworld.to/projects">
-                <li className="nav-item">게임 목록</li>
-              </a>
-
-              <a href="https://realworld.to/boards/news">
-                <li className="nav-item">뉴스</li>
-              </a>
-
-              <a
-                href="https://smartstore.naver.com/realworld"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <li className="nav-item">SHOP</li>
-              </a>
-
-              <a
-                href="https://uniquegood.biz/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <li className="nav-item">유니크굿컴퍼니</li>
-              </a> */}
             </Styled.NavList>
           </nav>
         </div>
