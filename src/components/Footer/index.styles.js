@@ -3,18 +3,15 @@ import styled from "styled-components";
 const Footer = styled.section`
   background: black;
   color: #fff;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding-top: 39px;
+  padding-bottom: 89px;
 
   > .container {
     margin: 0 auto;
     display: flex;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
 
     @media all and (min-width: 1200px) {
       max-width: 1092px;
-      background: red;
     }
 
     @media all and (max-width: 1199px) {
@@ -23,6 +20,8 @@ const Footer = styled.section`
 
     @media all and (max-width: 991px) {
       max-width: 720px;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
     }
 
     @media all and (max-width: 990px) {
@@ -34,20 +33,31 @@ const Footer = styled.section`
     }
 
     .title {
-      padding-bottom: 10px;
+      padding-bottom: 5px;
+      font-size: 17px;
     }
 
     > .footer-left {
       margin-right: 40px;
 
       p {
-        font-size: 13px;
-        line-height: 1.8;
+        font-size: 13.5px;
+        line-height: 1.6;
         padding-bottom: 20px;
+        font-weight: 500;
+        word-spacing: -1px;
+
+        > b {
+          font-weight: 800;
+        }
       }
     }
 
     > .footer-right {
+      > .title {
+        padding-bottom: 8px;
+      }
+
       .icon-top {
         margin-bottom: 10px;
 
@@ -64,7 +74,7 @@ const Footer = styled.section`
         }
 
         img {
-          margin-right: 10px;
+          margin-right: 7px;
         }
 
         > a {
@@ -75,6 +85,7 @@ const Footer = styled.section`
 
           > span {
             font-size: 14px;
+            font-weight: 500;
           }
         }
       }
