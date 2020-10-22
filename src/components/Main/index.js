@@ -8,14 +8,12 @@ const Main = () => {
     <Styled.MainContainer>
       <Styled.MainContent>
         <Styled.MainTitle>
-          {/* TODO: h1으로 바꾸면 SEO유리 */}
-          <p>리얼월드를 만나면</p>
-          <p>
-            세상은 <span>거대한 놀이터</span>가 되고
-          </p>
-          <p className="tablet-align">
-            우리 모두는 <span>플레이어</span>가 됩니다.
-          </p>
+          리얼월드를 만나면
+          <br></br>
+          세상은 <b>거대한 놀이터</b>가 되고
+          <br></br>
+          우리 모두는
+          <b> 플레이어</b>가 됩니다.
         </Styled.MainTitle>
 
         <Styled.DownloadButtons>
@@ -24,9 +22,8 @@ const Main = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {/* TODO: css를 위한 class이름은 kebab case로 */}
             <img
-              className="appStore button"
+              className="app-store button"
               src={blackAppStore}
               width="216px"
               height="70px"
@@ -40,7 +37,7 @@ const Main = () => {
             rel="noopener noreferrer"
           >
             <img
-              className="googlePlay button"
+              className="google-play button"
               src={blackGooglePlay}
               width="216px"
               height="70px"

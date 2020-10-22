@@ -1,14 +1,17 @@
 import { css } from "styled-components";
 
-// xs xxs md ls
+export function setMaxWidthMediaQuery(styles, deviceSize) {
+  return css`
+    @media all and (max-width: ${deviceSize}) {
+      ${styles}
+    }
+  `;
+}
 
-/** 모바일 size용 스타일 */
-export function mobile(maxWidth, styles) {
-  if (maxWidth === "xs") {
-    return css`
-      @media (max-width: ${`${maxWidth}px`}) {
-        ${styles}
-      }
-    `;
-  }
+export function setMinWidthMediaQuery(styles, deviceSize) {
+  return css`
+    @media all and (min-width: ${deviceSize}) {
+      ${styles}
+    }
+  `;
 }
