@@ -1,5 +1,9 @@
-import styled from "styled-components";
-import { device } from "../../device";
+import styled, { css } from "styled-components";
+import { deviceSize } from "../../device";
+import {
+  setMaxWidthMediaQuery,
+  setMinWidthMediaQuery,
+} from "../../styles/functions";
 
 const HeaderContainer = styled.header`
   position: fixed;
@@ -14,9 +18,12 @@ const HeaderContainer = styled.header`
   &.active {
     height: 289px;
 
-    @media all and (min-width: 992px) {
-      height: 56px;
-    }
+    ${setMinWidthMediaQuery(
+      css`
+        height: 56px;
+      `,
+      deviceSize.tablet1
+    )}
   }
 
   > .container {
@@ -24,28 +31,42 @@ const HeaderContainer = styled.header`
     max-width: 1090px;
     margin: 0 auto;
 
-    @media all and (max-width: 1199px) {
-      max-width: 912px;
-    }
+    ${setMaxWidthMediaQuery(
+      css`
+        max-width: 912px;
+      `,
+      deviceSize.desktop
+    )}
 
-    @media all and (max-width: 991px) {
-      max-width: 720px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+    ${setMaxWidthMediaQuery(
+      css`
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+      `,
+      deviceSize.tablet0
+    )}
 
-    @media all and (max-width: 767px) {
-      max-width: 540px;
-    }
+    ${setMaxWidthMediaQuery(
+      css`
+        max-width: 540px;
+      `,
+      deviceSize.mobile2
+    )}
 
-    @media all and (max-width: 575px) {
-      max-width: 527px;
-    }
+    ${setMaxWidthMediaQuery(
+      css`
+        max-width: 527px;
+      `,
+      deviceSize.mobile1
+    )}
+
 
     > .wrapper {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
   }
 `;
@@ -53,10 +74,6 @@ const HeaderContainer = styled.header`
 const Logo = styled.img`
   width: 170px;
   cursor: pointer;
-
-  @media ${device.tablet} {
-    max-width: 954px;
-  }
 `;
 
 const NavList = styled.ul`
@@ -72,14 +89,16 @@ const NavList = styled.ul`
     max-width: 527px;
   }
 
-  @media ${device.tablet} {
-    margin: 4px auto;
-    left: 0;
-    top: 40.5px;
-    flex-direction: column;
-    position: absolute;
-    width: 100%;
-  }
+  ${setMaxWidthMediaQuery(
+    css`
+      margin: 4px auto;
+      left: 0;
+      flex-direction: column;
+      position: absolute;
+      width: 100%;
+    `,
+    deviceSize.tablet0
+  )}
 
   .nav-item {
     cursor: pointer;
@@ -101,27 +120,35 @@ const ToggleButton = styled.div`
   display: none;
   cursor: pointer;
 
-  @media ${device.tablet} {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    padding: 6px 10px;
-    border-radius: 6px;
-    border: 0.1px solid
-      ${(props) =>
-        props.isBackgroundWhite ? "rgba(0,0,0,.1)" : "rgb(238 234 234 / 0.13)"};
-  }
+  ${setMaxWidthMediaQuery(
+    css`
+      display: block;
+      display: flex;
+      flex-direction: column;
+      padding: 6px 10px;
+      border-radius: 6px;
+      border: 0.1px solid
+        ${(props) =>
+          props.isBackgroundWhite
+            ? "rgba(0,0,0,.1)"
+            : "rgb(238 234 234 / 0.13)"};
+    `,
+    deviceSize.tablet0
+  )}
 `;
 
 const ToggleButtonInner = styled.div`
-  @media ${device.tablet} {
-    margin: 3px 4px;
-    background: ${(props) =>
-      props.isBackgroundWhite ? "rgba(0,0,0,.5)" : "rgb(251 247 247 / 60%)"};
-    width: 22px;
-    height: 2px;
-    z-index: 10;
-  }
+  ${setMaxWidthMediaQuery(
+    css`
+      margin: 3px 4px;
+      background: ${(props) =>
+        props.isBackgroundWhite ? "rgba(0,0,0,.5)" : "rgb(251 247 247 / 60%)"};
+      width: 22px;
+      height: 2px;
+      z-index: 10;
+    `,
+    deviceSize.tablet0
+  )}
 `;
 
 export default {
